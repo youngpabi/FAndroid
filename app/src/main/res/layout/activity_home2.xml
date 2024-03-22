@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Header with shop logo -->
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="390dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/logo_description"
+        app:srcCompat="@drawable/shop_icon" />
+
+        <!-- Category section -->
+    <TextView
+        android:id="@+id/tvCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivLogo"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/category_title"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/llCategoryContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/tvCategory"
+            android:layout_marginTop="8dp"
+            tools:ignore="DisableBaselineAlignment">
+
+            <!-- Category 1 -->
+            <LinearLayout
+                android:id="@+id/llCategory1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/ivCategory1"
+                    android:layout_width="84dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/category1_icon"
+                    android:contentDescription="@string/category1_description" />
+
+                <TextView
+                    android:id="@+id/tvCategory1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/category1_name"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="8dp" />
+
+            </LinearLayout>
+
+            <!-- Category 2 -->
+            <LinearLayout
+                android:id="@+id/llCategory2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/ivCategory2"
+                    android:layout_width="84dp"
+                    android:layout_height="64dp"
+                    android:contentDescription="@string/category2_description"
+                    app:srcCompat="@drawable/category3_shop" />
+
+                <TextView
+                    android:id="@+id/tvCategory2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/category2_name"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="8dp" />
+
+            </LinearLayout>
+
+            <!-- Category 3 -->
+            <LinearLayout
+                android:id="@+id/llCategory3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/ivCategory3"
+                    android:layout_width="84dp"
+                    android:layout_height="64dp"
+                    android:contentDescription="@string/category3_description"
+                    app:srcCompat="@drawable/product1" />
+
+                <TextView
+                    android:id="@+id/tvCategory3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/category3_name"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="8dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Featured Products section -->
+    <TextView
+        android:id="@+id/tvFeaturedProducts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llCategoryContainer"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/featured_products_title"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFeaturedProducts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvFeaturedProducts"
+        android:layout_alignBottom="@+id/tvContactInfo"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="6dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp" />
+
+        <!-- Footer with contact information -->
+    <TextView
+        android:id="@+id/tvContactInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:onClick="press"
+        android:text="@string/contact_info"
+        android:textSize="24sp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    </RelativeLayout>
+
+

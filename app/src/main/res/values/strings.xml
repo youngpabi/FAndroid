@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MyAgrochemicalShop</string>
+    <string name="email">UserName/Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <!-- Category Strings -->
+    <string name="category_title">Categories</string>
+    <string name="category1_name">Organic Fertilizer</string>
+    <string name="category2_name">Inorganic Fertilizer</string>
+    <string name="category3_name">Tools</string>
+
+    <!-- Category Descriptions -->
+    <string name="category1_description">Category 1 Description</string>
+    <string name="category2_description">Category 2 Description</string>
+    <string name="category3_description">Category 3 Description</string>
+
+    <!-- Featured Products Title -->
+    <string name="featured_products_title">Featured Products</string>
+
+    <!-- Logo Description -->
+    <string name="logo_description">Shop Logo</string>
+
+    <!-- Contact Information -->
+    <string name="contact_info">Contact Information</string>
+
+    <!-- Product item -->
+    <string name="product_image_description">Product Image</string>
+    <string name="add_to_cart_description">Add to Cart</string>
+
+
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+
+
+    <TextView
+        android:id="@+id/tvProductName"
+        android:layout_width="79dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="6dp"
+        android:layout_weight="1"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/ivAddToCart"
+        android:layout_width="124dp"
+        android:layout_height="54dp"
+        android:contentDescription="@string/add_to_cart_description"
+        android:src="@drawable/product1"/>
+</LinearLayout>
